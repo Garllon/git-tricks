@@ -1,6 +1,6 @@
 # git-tricks
 Some git work commands. Keep in mind if you have any question what things are doing you can run 
-`man git` for the manual page of git and for example `man git-commit` for the manual page of `git commit` command.
+`man git` for the manual page of `git` and for example `man git-commit` for the manual page of `git commit` command.
 
 ## Add changes to the last commit
 
