@@ -29,3 +29,13 @@ The `--no-edit` means that we don't want edit the commit message again.
 7. Amend the commit with `git commit --amend --no-edit`.
 8. Do a `git rebase --continue` which will rewrite the rest of your commits against the new one.
 9. Repeat from step 2 onwards if you have marked more than one commit for edit.
+
+## Delete merged branches on local machine
+
+```shell
+git branch --merged| egrep -v "(^\*|staging)" | xargs git branch -d
+```
+
+* `git branch --merged` -> lists all merged bracnhes
+* `egrep -v "(^\*|staging)"` -> ignore staging branch, more can be added via pipe
+* `xargs git branch -d` -> remove every branch in the list
